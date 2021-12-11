@@ -1,0 +1,145 @@
+.contacts__wrapper {
+  min-width: 320px;
+  background-color: $background;
+}
+
+.contacts__wrapper-form {
+  min-width: 320px;
+  background-color: $background-grey;
+}
+
+.contacts__invitation {
+  @include center;
+  max-width: 320px;
+  height: 114px;
+  display: flex;
+}
+
+.contacts__block1 {
+  width: 320px;
+  height: 114px;
+  margin-top: 14px;
+  margin-right: 2px;
+  margin-left: 19px;
+}
+
+.contacts__block2 {
+  width: 320px;
+  height: 114px;
+  margin-top: 14px;
+  margin-right: 2px;
+}
+
+.contacts__h3 {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-fonts;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-fonts;
+  font-weight: 400;
+  color: $special-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    min-width: 768px;
+    background-color: $background;
+  }
+
+  .contacts__invitation {
+    @include center;
+    max-width: 768px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -40px;
+  }
+
+  .contacts__block1,
+  .contacts__block2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__block1 {
+    width: 171px;
+    height: 83px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: -90px;
+    padding: 0;
+  }
+
+  .contacts__h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__block2 {
+    width: 159px;
+    height: 85px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    font-family: $second-fonts;
+    margin-right: -100px;
+  }
+
+  .contacts__invitation-form {
+    width: 768px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $background-grey;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 1440px;
+    position: relative;
+  }
+
+  .contacts__wrapper-form {
+    width: 1440px;
+    position: relative;
+  }
+
+  .contacts__invitation {
+    width: 570px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $background;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 20px;
+    margin: 0;
+  }
+
+  .contacts__block1,
+  .contacts__block2 {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+  }
+}
